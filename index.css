@@ -78,7 +78,7 @@ input[type=text]:focus {
     display: none;
 }
 .active:hover .sub-menu-1{
-    
+    z-index: 2;
     display: block;
     position: absolute;
     top: 50px;
@@ -98,11 +98,12 @@ input[type=text]:focus {
     
 }
 #modal{
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     display: none;
     top: 80px;
     left:20%;
+    background-color: #fff;
     color: #fff;
     
     /* background-color:black; */
@@ -225,11 +226,12 @@ border-bottom: 1px solid #5fa8d3;
 }
 
 .sub-menu-1 ul li{
+   
    margin-top: 10px;
    padding-bottom: 5px;
    font-size: 15px;
    font-family: 'PT Sans', sans-serif;
-   border-bottom: 1px solid gray;
+  
   
 }
 .sub-menu-1 ul li i{
@@ -244,6 +246,7 @@ nav ul li:hover .sub-menu{
     width: 250px;
     height: 340px;
     background-color:#fff;
+    z-index: 2;
     border-radius: 10px;
 }
 .sub-menu{
@@ -261,11 +264,72 @@ nav ul li:hover .sub-menu{
     margin-top: 20px;
     font-size: 15px;
     font-family: 'PT Sans', sans-serif;
-    border-bottom: 1px solid gray;
+   
    
  }
  .sub-menu ul li i{
      padding-right: 20px;
      color: #2874f0;
  }
- 
+ .container{
+     margin-top: 20px;
+     margin-left: 10px;
+     width: 100%;
+     display: flex;
+ }
+ .left-products{
+    
+     width: 80%;
+     background-color:#fff;
+    
+ }
+ .left-products ul {
+   
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-around;
+ }
+ .left-products ul li{
+     list-style: none;
+     cursor: pointer;
+     width: 150px;
+     
+ }
+ .product-p{
+     color: green;
+ }
+ .head-product{
+  
+   border: 1px solid gray;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ .arrow{
+     z-index: 1;
+     top: 34%;
+     left: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #fff;
+    box-shadow: 0px 2px 5px #888888;
+     height: 80px;
+     width: 35px;
+     position: absolute;
+ }
+ .view{
+     background-color: #2874f0;
+     color: #fff;
+     border: 0;
+ }
+ .right-product{
+     margin-left: 10px;
+     margin-right: 20px;
+     width: 20%;
+     
+ }
+ .right-product img{
+    width: 300px;
+ }
